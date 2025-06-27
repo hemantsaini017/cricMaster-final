@@ -1,5 +1,5 @@
 const btn = document.getElementById("btn");
-const scoreParagraph = document.getElementById("score");
+const scorepara = document.getElementById("score");
 
 btn.addEventListener("click", async () => {
   const url = 'https://cricket-live-data.p.rapidapi.com/series';
@@ -28,7 +28,7 @@ btn.addEventListener("click", async () => {
   
   catch(error) {
     console.error(error);
-    scoreParagraph.textContent = "Failed to fetch series.";
+    scorepara.textContent = "Failed to fetch series.";
   }
 });
 
